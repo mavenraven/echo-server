@@ -8,13 +8,20 @@
 	{
 		"name": "echo-server",
 		"image": "<IMAGE1_NAME>",
+		"memory": 512,
 		"portMappings": [
 		{
 			"hostPort": 80,
 			"protocol": "tcp",
 			"containerPort": 80
 		}
-		]
+		],
+		"logConfiguration": {
+			"awslogs-group": "echo-server",
+			"awslogs-create-group": "true",
+			"awslogs-region": "us-east-2",
+			"awslogs-stream-prefix": "echo-server"
+		}
 	}
 	],
 	"family": "echo-server-task-definition"
