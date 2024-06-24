@@ -3,7 +3,7 @@
 	"networkMode": "awsvpc",
 	"cpu": "256",
 	"memory": "512",
-	"executionRoleArn": "<ECS_TASK_EXECUTION_ROLE_ARN>",
+	"executionRoleArn": "ECS_TASK_EXECUTION_ROLE_ARN",
 	"containerDefinitions": [
 	{
 		"name": "echo-server",
