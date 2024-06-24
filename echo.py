@@ -15,7 +15,7 @@ def serve(host='0.0.0.0', port=80, verbosity=1):
         sock.listen(1)
 
         if verbosity > 0:
-            print('Echoing from http://{}:{}'.format(host, port))
+            print('ECHOING from http://{}:{}'.format(host, port))
 
         while True:
             connection, client_address = sock.accept()
