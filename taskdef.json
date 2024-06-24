@@ -17,10 +17,13 @@
 		}
 		],
 		"logConfiguration": {
-			"awslogs-group": "echo-server",
-			"awslogs-create-group": "true",
-			"awslogs-region": "us-east-2",
-			"awslogs-stream-prefix": "echo-server"
+			"logDriver": "awslogs",
+			"options": {
+				"awslogs-group": "echo-server",
+				"awslogs-create-group": "true",
+				"awslogs-region": "us-east-2",
+				"awslogs-stream-prefix": "echo-server"
+			}
 		}
 	}
 	],
